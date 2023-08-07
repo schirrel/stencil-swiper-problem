@@ -29,4 +29,10 @@ export const config: Config = {
   testing: {
     browserHeadless: "new",
   },
+  // buildEs5: 'prod',
+  // extras: {
+  //   // dynamicImportShim: true,
+  //   cloneNodeFix: true,
+  //   experimentalImportInjection: true,
+  // },
 };
