@@ -1,5 +1,4 @@
 import { Config } from '@stencil/core';
-import nodePolyfills from 'rollup-plugin-node-polyfills'
 
 export const config: Config = {
   namespace: 'stenil-swiper',
@@ -19,13 +18,6 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
-  nodeResolve: {
-    browser: true,
-    preferBuiltins: true
-  },
-  rollupPlugins: {
-    after: [nodePolyfills()]
-  },
   testing: {
     browserHeadless: "new",
   },
